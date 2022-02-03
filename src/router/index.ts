@@ -3,7 +3,6 @@ import { createRouter, createWebHistory } from 'vue-router';
 //Routes
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import NotFound from '../views/NotFound.vue'
 
 const routes = [
   {
@@ -22,7 +21,7 @@ const routes = [
   },
   {
     path: '/:page',
-    component: NotFound,
+    redirect: '/'
   },
 ];
 
