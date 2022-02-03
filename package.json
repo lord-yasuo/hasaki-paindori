@@ -1,0 +1,36 @@
+{
+  "name": "cuntlink",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint --ext .ts,vue --ignore-path .gitignore --fix .",
+    "preview": "vite preview",
+    "build": "vue-tsc --noEmit && vite build",
+    "deploy": "deploy.bat"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
+    "bootstrap": "^5.1.3",
+    "vue": "^3.2.25",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.14",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.7.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.3.0",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "sass": "^1.49.7",
+    "typescript": "^4.5.5",
+    "vite": "^2.7.2",
+    "vite-plugin-html": "^3.0.3",
+    "vue-tsc": "^0.29.8"
+  }
+}
