@@ -1,36 +1,40 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 //Routes
-import Home from './views/home.vue';
-import About from './views/about.vue';
-import Catalog from './views/catalog.vue';
-import Anime from './views/anime.vue';
-import Diary from './views/diary.vue';
+import Home from './views/home-view.vue';
+import About from './views/about-view.vue';
+import Catalog from './views/catalog-view.vue';
+import Anime from './views/anime-view.vue';
+import Diary from './views/diary-view.vue';
 
 const routes = [
   {
     path: '/',
-    meta: { title: 'Home' },
+    name: 'Accueil',
     component: Home,
   },
   {
     path: '/catalog',
-    meta: { title: 'Catalog' },
+    name: 'Catalogue',
     component: Catalog,
   },
   {
     path: '/anime/:id',
-    meta: { title: 'Anime' },
-    component: Anime,
+    name: 'Anime',
+    component: Anime
+  },
+  {
+    path: '/anime/:id/:name',
+    component: Anime
   },
   {
     path: '/diary',
-    meta: { title: 'My diary' },
+    name: 'Mon agenda',
     component: Diary,
   },
   {
     path: '/about',
-    meta: { title: 'About' },
+    name: 'About' ,
     component: About
   },
   {
@@ -43,4 +47,14 @@ export const Router = createRouter({
   scrollBehavior: () => ({ left: 0, top: 0 }),
   history: createWebHistory(),
   routes,
+});
+
+Router.beforeEach((to, from, next) => {
+  let pageTitle = to.name?.toString() + ' - Hasaki Pandori';
+  if (to.params.title) {
+    pageTitle = to.params.title + ' - Hasaki Pandori';
+  }
+
+  document.title = pageTitle;
+  next();
 });
