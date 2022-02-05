@@ -5,7 +5,7 @@ import { ref } from 'vue'
 const count = ref(0)
 
 function alo(): void {
-  console.log('count', this.count)
+  console.log('count', count)
 }
 </script>
 
