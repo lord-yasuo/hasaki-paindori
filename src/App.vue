@@ -1,11 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import navbar from './views/navbar-view.vue';
+</script>
 
 <template>
   <main>
-    <router-view />
+    <navbar></navbar>
+    <div class="body">
+      <router-view />
+    </div>
   </main>
 </template>
 
 <style lang="scss">
-  @import 'scss/app';
+@import 'scss/app';
 </style>

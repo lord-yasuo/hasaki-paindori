@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Router } from '../router'
-import { listAnimes } from '../data/listAnimes'
+import { listAnimes } from '../data/list-animes'
 
 const animeID = Router.currentRoute.value.params.id as string
 const anime = listAnimes[animeID]
