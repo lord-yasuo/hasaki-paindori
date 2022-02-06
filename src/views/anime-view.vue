@@ -23,6 +23,8 @@ if (anime) {
 <template>
   <div v-if="anime" class="text-center">
     <img :src="anime.imgCover" />
-    <router-link to="/" class="btn btn-secondary">Back Home</router-link>
+    <div>
+      <router-link to="/" class="btn btn-secondary m-3">Back Home</router-link>
+    </div>
   </div>
 </template>
