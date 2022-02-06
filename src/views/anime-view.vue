@@ -15,7 +15,7 @@ if (anime) {
   history.replaceState(
     history.state,
     '/anime/' + animeID,
-    '/anime/' + animeID + '/' + anime.title
+    '/anime/' + animeID + '/toto'
   );
 }
 </script>
