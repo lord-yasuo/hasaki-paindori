@@ -19,11 +19,16 @@ function alo(): void {
     </div>
     <div>
       <router-link
-    :to="{ name: 'Anime', params: { id: 1, title: 'BanG Dream! Garupa☆Pico' } }"
-    class="btn btn-primary m-2"
-    >BanG Dream! Garupa☆Pico</router-link
-  >
+        :to="{
+          name: 'Anime',
+          params: { id: 1, title: 'BanG Dream! Garupa☆Pico' },
+        }"
+        class="btn btn-primary m-2"
+        >BanG Dream! Garupa☆Pico</router-link
+      >
     </div>
+
+    <h1>null à chier vuejs : abandon du framework</h1>
   </div>
 </template>
 
