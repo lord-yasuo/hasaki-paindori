@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "module": "esnext",
+    "types": []
+  },
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts",
+    "app/agenda/calendar-current-season.component.ts",
+    "app/agenda/calendar-current-season.module.ts",
+    "app/models/anime.calendar.model.ts"
+  ]
+}

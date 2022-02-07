@@ -1,0 +1,152 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  color: #edebe8;
+  font-family: Poppins, sans-serif;
+  height: 100%;
+  font-size: 14px;
+}
+
+small {
+  font-size: 13px;
+}
+
+h4 {
+  color: #007bff;
+}
+
+html {
+  height: 100%;
+}
+
+app-header {
+  position: sticky !important;
+  top: 0 !important;
+  position: -webkit-sticky !important;
+  /* For macOS/iOS Safari */
+  z-index: 1000 !important;
+}
+
+.fade-in {
+  animation: fadeIn ease 0.3s;
+  -webkit-animation: fadeIn ease 0.3s;
+  -moz-animation: fadeIn ease 0.3s;
+  -o-animation: fadeIn ease 0.3s;
+  -ms-animation: fadeIn ease 0.3s;
+  padding-bottom: 0.5rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.zoom-in {
+  animation: zoomIn ease 0.4s;
+  -webkit-animation: zoomIn ease 0.4s;
+  -moz-animation: zoomIn ease 0.4s;
+  -o-animation: zoomIn ease 0.4s;
+  -ms-animation: zoomIn ease 0.4s;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-ms-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.go-top-btn {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1;
+}

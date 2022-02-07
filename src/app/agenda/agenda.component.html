@@ -1,0 +1,9 @@
+<div class="fade-in">
+  <h4 class="text-center mt-4 mb-4 fw-bold">{{ title }}</h4>
+
+  <div class="d-flex justify-content-center">
+    <button [ngxScrollTo]="'#destination'" *ngIf="showGoTopButton" class="btn btn-outline-light go-top-btn"
+      [@fadeAnimation]="'in'">
+      <i class="fas fa-arrow-circle-up fa-lg"></i>
+    </button>
+  </div>

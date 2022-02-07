@@ -1,0 +1,7 @@
+.container-fluid {
+    padding-top: 56px;
+
+    @media screen and (max-width: 308px) {
+        padding-top: 97px;
+    }
+}

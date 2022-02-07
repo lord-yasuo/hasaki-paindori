@@ -1,31 +1,20 @@
 # Hasaki Paindori
 
-A fansub webapp with:
+A fansub webapp
 
-- [Vite](https://vitejs.dev/guide/)
-- [Vue 3](https://staging.vuejs.org/guide/introduction.html)
-- [Vue Router v4](https://github.com/vuejs/vue-router-next)
-- [Bootstrap 5](https://getbootstrap.com/)
-- [Typescript](https://www.typescriptlang.org/)
-- [Eslint](https://eslint.org/docs/user-guide/getting-started)
-- [Prettier](https://prettier.io/docs/en/install.html)
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 
-The base project is `Edsonalencar/Vitalis-template`
+## Update node packages
 
-## Install
-
-```
-npx degit Edsonalencar/Vitalis-template hasaki-paindori
-cd hasaki-paindori
-npm i
-```
-
-## Serve & build for production
-
-```
-
-npm run dev
-npm run lint
-npm run build
-```
+[Follow instruction](https://nodejs.dev/learn/update-all-the-nodejs-dependencies-to-their-latest-version)

@@ -1,25 +1,17 @@
+/*
+  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
+  It is not intended to be used to perform a compilation.
+
+  To learn more about this file see: https://angular.io/config/solution-tsconfig.
+*/
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "importHelpers": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
-    "isolatedModules": true,
-    "strict": true,
-    "jsx": "preserve",
-    "sourceMap": true,
-    "baseUrl": ".",
-    "lib": ["esnext", "dom",
-      "dom.iterable",
-      "scripthost"],
-    "types": ["vite/client"],
-    "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }]
-  },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.scss"],
-  "exclude": [
-    "node_modules"
+  "files": [],
+  "references": [
+    {
+      "path": "./src/tsconfig.app.json"
+    },
+    {
+      "path": "./src/tsconfig.spec.json"
+    }
   ]
 }
