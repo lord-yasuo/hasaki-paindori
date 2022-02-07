@@ -1,7 +1,7 @@
 <template>
   <nav
     class="
-      navbar navbar-expand-sm navbar-light
+      navbar navbar-expand-sm navbar-dark
       bg-header
       fixed-top
       d-flex
@@ -21,7 +21,7 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div id="navbarNav" class="collapse navbar-collapse">
       <ul class="navbar-nav">
         <li class="nav-item">
           <router-link
