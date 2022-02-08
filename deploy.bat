@@ -1,3 +1,4 @@
+xcopy ".\_redirects" "dist\HasakiPaindori"
 cd dist/HasakiPaindori
 git init
 git add .
