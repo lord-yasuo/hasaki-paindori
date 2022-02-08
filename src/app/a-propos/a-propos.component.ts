@@ -3,14 +3,14 @@ import { Title } from '@angular/platform-browser';
 import { fadeAnimation } from '../animations/animations';
 
 @Component({
-  selector: 'app-faq-a-propos',
-  templateUrl: './faq-a-propos.component.html',
-  styleUrls: ['./faq-a-propos.component.scss'],
+  selector: 'app-a-propos',
+  templateUrl: './a-propos.component.html',
+  styleUrls: ['./a-propos.component.scss'],
   animations: [
     fadeAnimation
   ]
 })
-export class FaqAProposComponent {
+export class AProposComponent {
   showGoTopButton: boolean;
 
   constructor(private titleService: Title) {

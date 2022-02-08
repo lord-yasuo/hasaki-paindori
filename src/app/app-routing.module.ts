@@ -20,7 +20,7 @@ export const ROUTES: Routes = [
   },
   {
     path: 'a-propos',
-    loadChildren: () => import('./faq-a-propos/faq-a-propos.module').then(m => m.FaqAProposModule)
+    loadChildren: () => import('./a-propos/a-propos.module').then(m => m.AProposModule)
   }
 ];
 
