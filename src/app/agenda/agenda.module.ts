@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AgendaComponent } from './agenda.component';
+import { SharedModule } from '../shared.module';
 
 export const AGENDA_ROUTE: Routes = [
   { path: '', component: AgendaComponent }
@@ -15,7 +15,7 @@ export const AGENDA_ROUTE: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(AGENDA_ROUTE),
-    ScrollToModule.forRoot()
+    SharedModule
   ]
 })
 export class AgendaModule { }

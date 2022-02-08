@@ -5,8 +5,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  onHome = true;
 
   constructor() {
+  }
+
+  get onHome() {
+    return location.pathname === '/' || location.pathname === '';
+  }
+
+  get onAnime() {
+    return location.pathname.startsWith('/anime') || location.pathname.startsWith('/catalogue');
   }
 }

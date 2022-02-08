@@ -10,8 +10,8 @@ export class NotFoundComponent {
 
   notFoundText: string;
 
-  constructor(private titleService: Title) {
-    this.titleService.setTitle('Page non trouvée');
+  constructor(private _titleService: Title) {
+    this._titleService.setTitle('Page non trouvée');
     this.notFoundText = 'Page non trouvée';
   }
 

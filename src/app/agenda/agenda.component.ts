@@ -1,4 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { fadeAnimation, itemsAnimation } from '../animations/animations';
 
 @Component({
@@ -11,31 +12,14 @@ import { fadeAnimation, itemsAnimation } from '../animations/animations';
   ]
 })
 
-
 export class AgendaComponent implements OnInit {
-  showGoTopButton: boolean;
-  title: string;
+  showGoTopButton = false;
 
-  constructor() {
-    this.showGoTopButton = false;
-    this.title = 'Agenda - Hiver 2022';
+  constructor(private _titleService: Title) {
+    this._titleService.setTitle('Mon agenda - Hiver 2022 - Hasaki Paindori');
   }
 
-  ngOnInit() {
-  }
-
-  @HostListener('window:scroll', []) onWindowScroll() {
-    let offset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (offset === undefined || offset != null) {
-      if (offset === 0) {
-        this.showGoTopButton = false;
-      } else {
-        this.showGoTopButton = true;
-      }
-    } else {
-      offset = window.pageYOffset;
-      this.showGoTopButton = true;
-    }
+  ngOnInit(): void {
   }
 }
 

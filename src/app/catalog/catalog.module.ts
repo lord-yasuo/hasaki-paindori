@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { ListAnimesComponent } from './list-animes.component';
+import { CatalogComponent } from './catalog.component';
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgbButtonsModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedModule } from '../shared.module';
 
 export const LISTANIMES_ROUTE: Routes = [
-  { path: '', component: ListAnimesComponent }
+  { path: '', component: CatalogComponent }
 ];
 
 @NgModule({
   declarations: [
-    ListAnimesComponent
+    CatalogComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +22,7 @@ export const LISTANIMES_ROUTE: Routes = [
     NgbButtonsModule,
     NgbDropdownModule,
     RouterModule.forChild(LISTANIMES_ROUTE),
-    ScrollToModule.forRoot()
+    SharedModule
   ]
 })
-export class ListAnimesModule { }
+export class CatalogModule { }

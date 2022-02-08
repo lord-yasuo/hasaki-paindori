@@ -7,7 +7,15 @@ export const ROUTES: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
+    path: 'anime',
+    redirectTo: 'catalogue'
+  },
+  {
     path: 'anime/:id',
+    loadChildren: () => import('./anime/anime.module').then(m => m.AnimeModule)
+  },
+  {
+    path: 'anime/:id/:name',
     loadChildren: () => import('./anime/anime.module').then(m => m.AnimeModule)
   },
   { path: 'not-found', loadChildren: () => import('./not-found/not-found.module').then(m => m.NotFoundModule) },
@@ -16,7 +24,7 @@ export const ROUTES: Routes = [
   },
   {
     path: 'catalogue',
-    loadChildren: () => import('./list-animes/list-animes.module').then(m => m.ListAnimesModule)
+    loadChildren: () => import('./catalog/catalog.module').then(m => m.CatalogModule)
   },
   {
     path: 'a-propos',

@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { fadeAnimation } from '../animations/animations';
 
@@ -11,25 +11,9 @@ import { fadeAnimation } from '../animations/animations';
   ]
 })
 export class AProposComponent {
-  showGoTopButton: boolean;
+  showGoTopButton = false;
 
-  constructor(private titleService: Title) {
-    this.showGoTopButton = false;
-    this.titleService.setTitle('À propos');
+  constructor(private _titleService: Title) {
+    this._titleService.setTitle('A propos - Hasaki Paindori');
   }
-
-  @HostListener('window:scroll', []) onWindowScroll() {
-    let offset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (offset === undefined || offset != null) {
-      if (offset === 0) {
-        this.showGoTopButton = false;
-      } else {
-        this.showGoTopButton = true;
-      }
-    } else {
-      offset = window.pageYOffset;
-      this.showGoTopButton = true;
-    }
-  }
-
 }

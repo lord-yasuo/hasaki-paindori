@@ -3,19 +3,19 @@ import { Title } from '@angular/platform-browser';
 import { fadeAnimation, itemsAnimation } from '../animations/animations';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'app-catalog',
+  templateUrl: './catalog.component.html',
+  styleUrls: ['./catalog.component.scss'],
   animations: [
     fadeAnimation,
     itemsAnimation
   ]
 })
-export class HomeComponent implements OnInit {
+export class CatalogComponent implements OnInit {
   showGoTopButton = false;
 
-  constructor(private _titleService: Title) {
-    this._titleService.setTitle('Accueil - Hasaki Paindori');
+  constructor( private _titleService: Title) {
+    this._titleService.setTitle('Catalogue - Hasaki Paindori');
   }
 
   ngOnInit() {

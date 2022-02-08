@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AnimeComponent } from './anime.component';
-import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from '../shared.module';
 
 export const ANIME_ROUTE: Routes = [
-  { path: '', component: AnimeComponent }
+  { path: '', component: AnimeComponent },
+  { path: '/:id', component: AnimeComponent }
 ];
 
 @NgModule({
@@ -15,9 +15,9 @@ export const ANIME_ROUTE: Routes = [
   ],
   imports: [
     CommonModule,
-    HttpClientModule,
     RouterModule.forChild(ANIME_ROUTE),
-    ScrollToModule.forRoot()
+    SharedModule
+   
   ]
 })
 export class AnimeModule { }

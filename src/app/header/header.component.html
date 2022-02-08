@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-header fixed-top d-flex align-items-baseline">
-  <a class="navbar-brand" routerLink="/" [ngClass]="{ active: onHome }" (click)="onHome = true;">Hasaki Paindori</a>
+  <a class="navbar-brand" routerLink="/" [ngClass]="{ active: onHome }">Hasaki Paindori</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,9 +7,9 @@
   <!-- // Display all menus in desktop view -->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="/catalogue" routerLinkActive="active" (click)="onHome = false;">Catalogue</a>
-      <a class="nav-item nav-link" routerLink="/agenda" routerLinkActive="active" (click)="onHome = false;">Mon agenda</a>
-      <a class="nav-item nav-link" routerLink="/a-propos" routerLinkActive="active" (click)="onHome = false;">A propos</a>
+      <a class="nav-item nav-link" routerLink="/catalogue" [ngClass]="{ active: onAnime }">Catalogue</a>
+      <a class="nav-item nav-link" routerLink="/agenda" routerLinkActive="active">Mon agenda</a>
+      <a class="nav-item nav-link" routerLink="/a-propos" routerLinkActive="active">A propos</a>
     </ul>
   </div>
 </nav>

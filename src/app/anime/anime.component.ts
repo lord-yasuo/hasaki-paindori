@@ -1,5 +1,9 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { ActivatedRoute, Router } from '@angular/router';
 import { fadeAnimation, fadeInEpisodes } from '../animations/animations';
+import { listAnimes } from '../data/list-animes';
+import { AnimeModel } from '../models/anime.model';
 
 @Component({
   selector: 'app-anime',
@@ -11,26 +15,22 @@ import { fadeAnimation, fadeInEpisodes } from '../animations/animations';
   ]
 })
 export class AnimeComponent implements OnInit {
-  showGoTopButton: boolean;
+  showGoTopButton = false;
+  anime: AnimeModel;
 
-  constructor() {
-    this.showGoTopButton = false;
-  }
+  constructor(private _activatedRoute: ActivatedRoute, private _router: Router, private _titleService: Title) { }
 
   ngOnInit() {
-  }
+    const animeID = this._activatedRoute.snapshot.paramMap.get('id');
+    this.anime = listAnimes[animeID]
+    if (this.anime) {
+      this._titleService.setTitle(this.anime.title + ' - Hasaki Paindori');
 
-  @HostListener('window:scroll', []) onWindowScroll() {
-    let offset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (offset === undefined || offset != null) {
-      if (offset === 0) {
-        this.showGoTopButton = false;
-      } else {
-        this.showGoTopButton = true;
-      }
-    } else {
-      offset = window.pageYOffset;
-      this.showGoTopButton = true;
+      // Add anime name in URL
+      history.replaceState(history.state, '/anime/' + animeID, '/anime/' + animeID + '/' + this.anime.title);
+      return;
     }
+
+    this._router.navigateByUrl('/catalogue');
   }
 }

@@ -1,3 +1,67 @@
-<div class="fade-in">
-  <h3>Anime page</h3>
+<div *ngIf="anime" class="fade-in" appGoTop (showGoTopButton)="showGoTopButton = $event">
+  <h3>{{ anime.title }}</h3>
+
+  <div class="row justify-content-center">
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 max-content-width-img">
+      <div class="zoom-in">
+        <img [@fadeInEpisodes] *ngIf="anime.imgCover" [src]="anime.imgCover">
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 max-content-width">
+      <div>
+        <p>
+          <span class="fw-bold">Format</span> : {{ anime.animeFormat }}
+        </p>
+        <p *ngIf="anime.numberEpisodes">
+          <span class="fw-bold">Épisodes</span> : {{ anime.numberEpisodes }} x {{ anime.durationPerEpisode }}
+        </p>
+        <p *ngIf="!anime.numberEpisodes">
+          <span *ngIf="!anime.numberEpisodes" class="fw-bold">Durée</span> : {{ anime.durationPerEpisode }}
+        </p>
+        <p>
+          <span class="fw-bold">Saison</span> : {{ anime.season }} {{ anime.year }}
+        </p>
+        <p>
+          <span class="fw-bold">Diffusion</span> : {{ anime.aired }}
+        </p>
+        <p>
+          <span class="fw-bold">Genres</span> : {{ anime.genres }}
+        </p>
+        <p>
+          <span class="fw-bold">Studios d'animation</span> : {{ anime.studios }}
+        </p>
+        <p>
+          <span class="fw-bold">Résumé</span> : {{ anime.summary }}
+        </p>
+        <p>
+          <span class="fw-bold">Pour plus d'informations</span> :
+          <a [href]="anime.infoLinks.nautiljon" target="_blank" class="normal-url link">Nautiljon</a> /
+          <a [href]="anime.infoLinks.anilist" target="_blank" class="normal-url link">Anilist</a>
+        </p>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 max-content-links">
+      <p class="mb-3">
+        <span class="fw-bold">Dernière modification</span> :
+        {{ anime.lastUpdate * 1000 | date:'dd/MM/yyyy HH:mm':'undefined':'fr' }}
+      </p>
+
+      <div class="list-group">
+        <div class="list-group-item bg-secondary">
+          <a class="btn btn-sm btn-outline-dark text-white me-3" [ngClass]="{'disabled': !anime.downloadLinks.ddl}"
+            [href]="anime.downloadLinks.ddl" target="_blank">
+            DDL mega.io
+          </a>
+          <a class="btn btn-sm btn-outline-dark text-white" [ngClass]="{'disabled': !anime.downloadLinks.torrent}"
+            [href]="anime.downloadLinks.torrent" target="_blank">
+            Torrent nyaa.si
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button [ngxScrollTo]="'#destination'" *ngIf="showGoTopButton" class="btn btn-outline-light go-top-btn"
+    [@fadeAnimation]="'in'">
+    <i class="fas fa-arrow-circle-up fa-lg"></i>
+  </button>
 </div>

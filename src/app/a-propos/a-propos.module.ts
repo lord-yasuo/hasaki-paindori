@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AProposComponent } from './a-propos.component';
+import { SharedModule } from '../shared.module';
 
 export const APROPOS_ROUTE: Routes = [
   { path: '', component: AProposComponent }
@@ -15,7 +15,7 @@ export const APROPOS_ROUTE: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(APROPOS_ROUTE),
-    ScrollToModule.forRoot()
+    SharedModule
   ]
 })
 export class AProposModule { }

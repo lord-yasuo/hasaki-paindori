@@ -1,9 +1,8 @@
-<div class="fade-in">
-  <h3>{{ title }}</h3>
-  <div class="row justify-content-center">
-    Coucou
-    <div>
-    </div>
+<div class="fade-in" appGoTop (showGoTopButton)="showGoTopButton = $event">
+  <h3>Dernières sorties</h3>
+  <div class="text-center">
+    <p>Coucou</p>
+    <button routerLink="/catalogue" class="btn btn-primary">Catalogue</button>
   </div>
 
   <button [ngxScrollTo]="'#destination'" *ngIf="showGoTopButton" class="btn btn-outline-light go-top-btn"
