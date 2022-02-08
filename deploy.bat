@@ -1,4 +1,4 @@
-cd dist
+cd dist/HasakiPaindori
 git init
 git add .
 git commit -m "New Deployment"
