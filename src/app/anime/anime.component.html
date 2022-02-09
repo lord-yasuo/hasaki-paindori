@@ -3,8 +3,9 @@
 
   <div class="row justify-content-center">
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 max-content-width-img">
-      <div class="zoom-in">
-        <img [@fadeInEpisodes] *ngIf="anime.imgCover" [src]="anime.imgCover">
+      <div class="zoom-in position-relative">
+        <img *ngIf="anime.coverImg" [src]="anime.coverImg">
+        <h1 *ngIf="anime.bdrip" class="badge bdrip">BDRip</h1>
       </div>
     </div>
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 max-content-width">

@@ -1,12 +1,12 @@
 export interface AnimeCalendarModel {
-    img: string;
-    route: string;
-    time: string;
-    title: string;
+  img: string;
+  route: string;
+  time: string;
+  title: string;
 }
 
 export interface AnimesCalendarModel {
-    id: string;
-    animes: Array<AnimeCalendarModel>;
-    season?: string;
+  id: string;
+  animes: Array<AnimeCalendarModel>;
+  season?: string;
 }

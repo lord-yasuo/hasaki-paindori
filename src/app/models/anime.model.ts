@@ -6,8 +6,9 @@ export class CatalogModel {
 export class AnimeModel {
   id: number;
   title: string;
+  bdrip?: boolean;
   alternativeTitle: string;
-  imgCover: string;
+  coverImg: string;
   lastUpdate: number;
   numberEpisodes: string;
   animeFormat: string;

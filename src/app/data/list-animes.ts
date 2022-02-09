@@ -4,8 +4,9 @@ export const listAnimes: CatalogModel = {
   1: {
     id: 1,
     title: 'BanG Dream! Garupa☆Pico',
+    bdrip: true,
     alternativeTitle: 'BanG Dream! Girls Band Party!☆PICO',
-    imgCover: 'https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx101632-5OU4PENKC8CV.jpg',
+    coverImg: 'https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx101632-5OU4PENKC8CV.jpg',
     lastUpdate: 1644083687,
     numberEpisodes: '26',
     animeFormat: 'Série TV',

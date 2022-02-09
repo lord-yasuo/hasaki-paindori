@@ -153,3 +153,33 @@ app-header {
   right: 5px;
   z-index: 1;
 }
+
+.img-page {
+  width: 100%;
+  box-shadow: -1px 10px 29px 0px rgb(0 0 0 / 50%);
+}
+
+table {
+  border-color: #111 !important;
+
+  td,
+  th {
+    color: #edebe8 !important;
+    vertical-align: middle;
+  }
+
+  td::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.badge {
+  &.bdrip {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    font-size: 100%;
+    background-color: #0d6efd;
+    color: white;
+  }
+}

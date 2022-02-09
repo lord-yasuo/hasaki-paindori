@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
-import { fadeAnimation, fadeInEpisodes } from '../animations/animations';
+import { fadeAnimation } from '../animations/animations';
 import { listAnimes } from '../data/list-animes';
 import { AnimeModel } from '../models/anime.model';
 
@@ -10,8 +10,7 @@ import { AnimeModel } from '../models/anime.model';
   templateUrl: './anime.component.html',
   styleUrls: ['./anime.component.scss'],
   animations: [
-    fadeAnimation,
-    fadeInEpisodes,
+    fadeAnimation
   ]
 })
 export class AnimeComponent implements OnInit {

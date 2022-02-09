@@ -1,8 +1,39 @@
 <div class="fade-in" appGoTop (showGoTopButton)="showGoTopButton = $event">
-  <h3>Dernières sorties</h3>
+  <h3>Dernière news</h3>
   <div class="text-center">
-    <p>Coucou</p>
-    <button routerLink="/catalogue" class="btn btn-primary">Catalogue</button>
+    <div class="content-img">
+      <div class="zoom-in">
+        <img src="../../assets/home.jpg" class="img-page" />
+      </div>
+     
+    </div>
+
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped">
+          <tbody>
+            <tr>
+              <td class="fw-bold">Type</td>
+              <td class="fw-bold">Date</td>
+              <td class="fw-bold">Titre</td>
+            </tr>
+            <tr *ngFor="let item of news">
+              <td>
+                <span *ngIf="item.type === 'site'">{{ item.type }}</span>
+                <div class="zoom-in">
+                  <img *ngIf="item.type === 'anime'" [src]="getAnimeData(item).coverImg" class="cover-img" />
+                </div>
+              </td>
+              <td>{{ item.lastUpdate * 1000 | date:'dd/MM/yyyy HH:mm':'undefined':'fr' }}</td>
+              <td>
+                <a *ngIf="item.type === 'anime'" [routerLink]="'anime/' + item.id">{{ getAnimeData(item).title }}</a>
+                <span><br *ngIf="item.type === 'anime'" > {{ item.title }}</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 
   <button [ngxScrollTo]="'#destination'" *ngIf="showGoTopButton" class="btn btn-outline-light go-top-btn"
