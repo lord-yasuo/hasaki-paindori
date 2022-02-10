@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { fadeAnimation, itemsAnimation } from '../animations/animations';
-import { listAnimes } from '../data/list-animes';
-import { listNews } from '../data/list-news';
+import { fadeAnimation } from '../animations/animations';
+import { listAnimes } from '../data/animes-data';
+import { listNews } from '../data/news-data';
 import { AnimeModel } from '../models/anime.model';
 import { NewModel } from '../models/new.model';
 
@@ -11,8 +11,7 @@ import { NewModel } from '../models/new.model';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations: [
-    fadeAnimation,
-    itemsAnimation
+    fadeAnimation
   ]
 })
 export class HomeComponent implements OnInit {

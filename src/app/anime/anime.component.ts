@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { fadeAnimation } from '../animations/animations';
-import { listAnimes } from '../data/list-animes';
+import { listAnimes } from '../data/animes-data';
 import { AnimeModel } from '../models/anime.model';
 
 @Component({

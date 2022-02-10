@@ -1,0 +1,83 @@
+.card {
+  padding: 16px 0;
+  border-radius: 0;
+  border-color: #111;
+  border-left: 0;
+
+  &.fix-day-on-small-screen {
+    @media screen and (max-width: 575px) {
+      border-top: 0;
+    }
+  }
+
+  &.fix-last-day-on-small-screen {
+    @media screen and (max-width: 575px) {
+      border-bottom: 1px solid #111;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    border-left: 1px solid #111;
+    border-bottom: 0;
+    padding: 0;
+  }
+
+  .day {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #111;
+
+    @media screen and (max-width: 575px) {
+      padding-top: 16px;
+    }
+  }
+
+  .day::first-letter {
+    text-transform: capitalize;
+  }
+
+  .animes {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #111;
+    min-height: 350px;
+
+    &.is-latest {
+      border: 0;
+    }
+
+    &.last-on-small-screen {
+      @media screen and (max-width: 575px) {
+        border-bottom: 0;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      min-height: unset;
+    }
+
+    .cover-img {
+      width: 100%;
+      max-width: 142px;
+      margin-top: 4px;
+    }
+
+    .title-and-vods {
+      min-height: 95px;
+
+      @media screen and (max-width: 575px) {
+        min-height: unset;
+      }
+
+      .vod-icon {
+        margin: 4px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.card:first-child {
+  border: 1px solid #111;
+}

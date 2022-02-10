@@ -1,6 +1,6 @@
 
 export class NewsModel {
-  [id: string]: NewModel;
+  [id: number]: NewModel;
 }
 
 export class NewModel {

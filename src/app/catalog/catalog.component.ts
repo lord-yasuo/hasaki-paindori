@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { fadeAnimation, itemsAnimation } from '../animations/animations';
+import { fadeAnimation } from '../animations/animations';
 
 @Component({
   selector: 'app-catalog',
   templateUrl: './catalog.component.html',
   styleUrls: ['./catalog.component.scss'],
   animations: [
-    fadeAnimation,
-    itemsAnimation
+    fadeAnimation
   ]
 })
 export class CatalogComponent implements OnInit {

@@ -1,6 +1,6 @@
 
 export class CatalogModel {
-  [id: string]: AnimeModel;
+  [id: number]: AnimeModel;
 }
 
 export class AnimeModel {

@@ -6,7 +6,7 @@ export interface AnimeCalendarModel {
 }
 
 export interface AnimesCalendarModel {
-  id: string;
+  id: number;
   animes: Array<AnimeCalendarModel>;
   season?: string;
 }

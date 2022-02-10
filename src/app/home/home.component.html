@@ -5,10 +5,9 @@
       <div class="zoom-in">
         <img src="../../assets/home.jpg" class="img-page" />
       </div>
-     
     </div>
 
-    <div class="container">
+    <div *ngIf="news" class="container">
       <div class="table-responsive">
         <table class="table table-bordered table-hover table-striped">
           <tbody>
@@ -20,7 +19,7 @@
             <tr *ngFor="let item of news">
               <td>
                 <span *ngIf="item.type === 'site'">{{ item.type }}</span>
-                <div class="zoom-in">
+                <div class="overflow-hidden zoom-in">
                   <img *ngIf="item.type === 'anime'" [src]="getAnimeData(item).coverImg" class="cover-img" />
                 </div>
               </td>
