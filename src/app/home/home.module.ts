@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from '../shared.module';
+import { HttpClientModule } from '@angular/common/http';
 
 export const HOME_ROUTE: Routes = [
   { path: '', component: HomeComponent }
@@ -15,7 +16,8 @@ export const HOME_ROUTE: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(HOME_ROUTE),
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ]
 })
 export class HomeModule { }
