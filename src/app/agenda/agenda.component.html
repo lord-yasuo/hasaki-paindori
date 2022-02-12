@@ -5,7 +5,7 @@
     Ceci est mon agenda personnel. Il ne contient pas tout mais contient au moins les plus connus.
   </div>
   <div *ngIf="agenda" class="row p-3">
-    <div *ngFor="let item of agenda; let first = first;" class="card bg-dark col" [ngClass]="{'fix-day-on-small-screen': item.day === 'mardi', 'fix-last-day-on-small-screen': item.day === 'dimanche'}">
+    <div *ngFor="let item of agenda; let first = first;" class="card bg-dark col-sm" [ngClass]="{'fix-day-on-small-screen': item.day === 'mardi', 'fix-last-day-on-small-screen': item.day === 'dimanche'}">
       <div class="day">{{ item.day }}</div>
       <div *ngFor="let anime of item.animes; let last = last; let index = index;" class="animes"
         [ngClass]="{'is-latest': last && isLatestAnime(index), 'last-on-small-screen': last}">
