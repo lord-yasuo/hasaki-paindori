@@ -1,0 +1,130 @@
+.card {
+  width: 207px;
+  height: auto;
+  background-size: cover;
+  overflow: hidden;
+  box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.5);
+  background: transparent;
+}
+
+.badge {
+  padding: 0.25em 0.4em !important;
+}
+
+.card-img-top {
+  width: 207px;
+  height: 310px;
+  cursor: pointer;
+  object-fit: cover;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+
+  &:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+.bdrip {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 100%;
+  background-color: #007bff;
+  color: white;
+}
+
+.last-update {
+  font-size: 12.5px !important;
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0);
+  background-color: #9043a0bf;
+  color: white;
+  font-weight: normal;
+  font-style: italic;
+  font-size: smaller;
+}
+
+.season {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 100%;
+  background-color: #dc3545;
+  color: white;
+
+  &.winter {
+    background-color: blue;
+  }
+
+  &.spring {
+    background-color: #008400;
+  }
+
+  &.autumn {
+    background-color: #ffa500;
+  }
+}
+
+.go-top-btn {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 0.3s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.15);
+}
+
+.dropdown-submenu {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-submenu {
+  .dropdown-toggle {
+    pointer-events: none;
+    color: white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: #007bff;
+    color: white;
+  }
+}
+
+.form-control {
+  background-color: #1b1b1b;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.card-img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  padding: 0;
+  bottom: 0;
+  top: unset;
+  background-color: rgba(108, 117, 125, 0.7);
+}
+
+.anime-title {
+  text-align: center;
+  font-weight: 700;
+}

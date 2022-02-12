@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
-import { fadeAnimation } from '../animations/animations';
+import { fadeAnimation, itemsAnimation } from '../animations/animations';
 import { AnimeModel } from '../models/anime.model';
 import { HttpClient } from '@angular/common/http';
 
@@ -10,7 +10,8 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './anime.component.html',
   styleUrls: ['./anime.component.scss'],
   animations: [
-    fadeAnimation
+    fadeAnimation,
+    itemsAnimation
   ]
 })
 export class AnimeComponent implements OnInit {
@@ -32,6 +33,7 @@ export class AnimeComponent implements OnInit {
       .subscribe({
         next: data => {
           this.anime = data[animeID];
+          this._titleService.setTitle(this.anime.title + ' - Hasaki Paindori');
 
           if (this.anime) {
             this._titleService.setTitle(this.anime.title + ' - Hasaki Paindori');

@@ -8,5 +8,6 @@ export class NewModel {
   lastUpdate: number;
   title: string;
   id?: number;
-  text?: string;
+  description?: string;
+  coverImg?: string;
 }

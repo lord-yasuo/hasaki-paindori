@@ -1,8 +1,30 @@
 <div class="fade-in" appGoTop (showGoTopButton)="showGoTopButton = $event">
   <h3>Catalogue</h3>
 
-  <div class=text-center>
-    <button routerLink="/anime/1" class="btn btn-primary">BanG Dream! Garupa☆Pico</button>
+  <div class="row justify-content-center">
+    <div @items class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto"
+      *ngFor="let anime of catalog">
+      <div class="card" style="max-width: 18rem;">
+        <a [routerLink]="'/anime/' + anime.id">
+          <div class="inner">
+              <img  [@fadeAnimation]="'in'" class="card-img-top" [src]="anime.coverImg">
+            <h1 *ngIf="anime.bdrip" class="badge bdrip">BDRip</h1>
+            <h1 class="badge season" [ngClass]="{'winter': anime.season.includes('Hiver'),
+              'spring': anime.season.includes('Printemps'),
+              'autumn': anime.season.includes('Automne')}">{{ anime.season + ' ' + anime.year }}</h1>
+           <!--  <h1 *ngIf="anime.lastUpdate" class="badge last-update">Modifié le {{ anime.lastUpdate *
+              1000 | date:'dd/MM/yyyy HH:mm':'undefined':'fr' }}</h1> -->
+          </div>
+        </a>
+        <div class="card-img-overlay">
+          <div *ngIf="anime.title.length <= 60" class="anime-title" [title]="anime.title">
+            {{ anime.title }}</div>
+          <div *ngIf="anime.title.length > 60" class="anime-title" [title]="anime.title">
+            {{ anime.title | slice:0:58 }}...
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <button [ngxScrollTo]="'#destination'" *ngIf="showGoTopButton" class="btn btn-outline-light go-top-btn"

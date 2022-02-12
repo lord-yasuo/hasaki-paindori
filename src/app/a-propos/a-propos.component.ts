@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { fadeAnimation } from '../animations/animations';
+import { fadeAnimation, itemsAnimation } from '../animations/animations';
 
 @Component({
   selector: 'app-a-propos',
   templateUrl: './a-propos.component.html',
   styleUrls: ['./a-propos.component.scss'],
   animations: [
-    fadeAnimation
+    fadeAnimation,
+    itemsAnimation
   ]
 })
 export class AProposComponent {

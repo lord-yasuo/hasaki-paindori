@@ -7,7 +7,7 @@
       </div>
     </div>
 
-    <div *ngIf="news && catalog" class="container">
+    <div *ngIf="news" class="container">
       <div class="table-responsive">
         <table class="table table-bordered table-hover table-striped">
           <tbody>
@@ -19,14 +19,15 @@
             <tr *ngFor="let item of news">
               <td>
                 <span *ngIf="item.type === 'site'">{{ item.type }}</span>
-                <div class="overflow-hidden zoom-in">
-                  <img *ngIf="item.type === 'anime'" [src]="getAnimeData(item).coverImg" class="cover-img" />
+                <div @items class="overflow-hidden">
+                  <img *ngIf="item.type === 'anime'" [src]="item.coverImg" class="cover-img" />
                 </div>
               </td>
               <td>{{ item.lastUpdate * 1000 | date:'dd/MM/yyyy HH:mm':'undefined':'fr' }}</td>
               <td>
-                <a *ngIf="item.type === 'anime'" [routerLink]="'anime/' + item.id">{{ getAnimeData(item).title }}</a>
-                <span><br *ngIf="item.type === 'anime'" > {{ item.title }}</span>
+                <a *ngIf="item.type === 'anime'" [routerLink]="'anime/' + item.id">{{ item.title }}</a>
+                <span *ngIf="item.type === 'anime'"><br> {{ item.description }}</span>
+                <span *ngIf="item.type !== 'anime'">{{ item.title }}</span>
               </td>
             </tr>
           </tbody>

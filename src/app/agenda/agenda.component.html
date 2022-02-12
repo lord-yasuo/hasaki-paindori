@@ -14,13 +14,11 @@
           <a [href]="anime.url" target="_blank">
             {{ anime.title }}
           </a>
-          <div class="zoom-in">
+          <div @items>
             <img *ngFor="let vod of getVODs(anime)" [src]="'../../assets/' + vod + '.webp'" class="vod-icon" />
           </div>
         </div>
-        <div class="zoom-in">
-          <img class="cover-img" [src]="anime.img">
-        </div>
+        <img @items class="cover-img" [src]="anime.img">
       </div>
     </div>
   </div>

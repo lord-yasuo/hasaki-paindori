@@ -8,8 +8,6 @@
   "exclude": [
     "src/test.ts",
     "**/*.spec.ts",
-    "app/agenda/calendar-current-season.component.ts",
-    "app/agenda/calendar-current-season.module.ts",
-    "app/models/anime.calendar.model.ts"
+    "environments/environment.prod.ts"
   ]
 }
