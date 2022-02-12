@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { AgendaComponent } from './agenda.component';
 import { SharedModule } from '../shared.module';
+import { HttpClientModule } from '@angular/common/http';
 
 export const AGENDA_ROUTE: Routes = [
   { path: '', component: AgendaComponent }
@@ -15,7 +16,8 @@ export const AGENDA_ROUTE: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(AGENDA_ROUTE),
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ]
 })
 export class AgendaModule { }
