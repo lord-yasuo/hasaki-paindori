@@ -43,7 +43,7 @@ export class AgendaComponent implements OnInit {
     if (window.innerWidth < 576) {
       return false;
     }
-    return index === this.agenda.map(day => day.animes.length).indexOf(Math.max(... this.agenda.map(day => day.animes.length)));
+    return index - 1 === this.agenda.map(day => day.animes.length).indexOf(Math.max(... this.agenda.map(day => day.animes.length)));
   }
 }
 
