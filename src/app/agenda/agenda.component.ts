@@ -29,7 +29,7 @@ export class AgendaComponent implements OnInit {
           this.agenda = Object.entries(data).map(([day, animes]: [day: string, animes: Array<DayAnimeModel>]) => ({ day, animes }));
         },
         error: error => {
-          console.log('Cannot get agenda: ', error)
+          console.error('Cannot get agenda: ', error)
         }
       }
     );

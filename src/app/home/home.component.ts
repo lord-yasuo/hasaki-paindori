@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
           this.news = Object.entries(data).map((value) => (value[1])).sort((a, b) => b.lastUpdate - a.lastUpdate);
         },
         error: error => {
-          console.log('Cannot get news: ', error)
+          console.error('Cannot get news: ', error)
         }
       }
     );

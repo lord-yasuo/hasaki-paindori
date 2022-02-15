@@ -26,8 +26,10 @@
               <td>{{ item.lastUpdate * 1000 | date:'dd/MM/yyyy HH:mm':'undefined':'fr' }}</td>
               <td>
                 <a *ngIf="item.type === 'anime'" [routerLink]="'anime/' + item.id">{{ item.title }}</a>
-                <span *ngIf="item.type === 'anime'"><br> {{ item.description }}</span>
-                <span *ngIf="item.type !== 'anime'">{{ item.title }}</span>
+                <span *ngIf="item.type !== 'anime'" [innerHTML]="item.title"></span><br>
+
+                <span *ngIf="item.description" [innerHTML]="item.description"></span>
+
               </td>
             </tr>
           </tbody>

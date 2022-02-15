@@ -32,5 +32,6 @@ export class AnimeModel {
       checker: string;
       encoder: string;
     };
-  }
+  };
+  status?: string;
 }

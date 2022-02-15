@@ -39,6 +39,9 @@
           <a [href]="anime.infoLinks.nautiljon" target="_blank" class="normal-url link">Nautiljon</a> /
           <a [href]="anime.infoLinks.anilist" target="_blank" class="normal-url link">Anilist</a>
         </p>
+        <p *ngIf="anime.status">
+          <span class="fw-bold">Statut</span> : <span [innerHTML]="anime.status"></span>
+        </p>
       </div>
     </div>
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 max-content-links">
