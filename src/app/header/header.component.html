@@ -1,15 +1,18 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-header fixed-top d-flex align-items-baseline">
-  <a class="navbar-brand" routerLink="/" [ngClass]="{ active: onHome }">Hasaki Paindori</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!-- // Display all menus in desktop view -->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="/catalogue" [ngClass]="{ active: onAnime }">Catalogue</a>
-      <a class="nav-item nav-link" routerLink="/agenda" routerLinkActive="active">Mon agenda</a>
-      <a class="nav-item nav-link" routerLink="/a-propos" routerLinkActive="active">A propos</a>
-    </ul>
+  <div class="container d-flex justify-content-between">
+    <a class="navbar-brand" routerLink="/" [ngClass]="{ active: onHome }">  <img class="icon-home" src="../../assets/favicon.ico" /> Hasaki Paindori</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- // Display all menus in desktop view -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/catalogue" [ngClass]="{ active: onAnime }"><i class="fa fa-folder me-2"></i>Catalogue</a>
+        <a class="nav-item nav-link" routerLink="/agenda" routerLinkActive="active"><i class="fa fa-calendar me-2"></i>Mon agenda</a>
+        <a class="nav-item nav-link" routerLink="/a-propos" routerLinkActive="active"><i class="fa fa-question me-2"></i>A propos</a>
+      </ul>
+    </div>
   </div>
+ 
 </nav>

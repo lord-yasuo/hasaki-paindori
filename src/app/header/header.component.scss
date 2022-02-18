@@ -29,10 +29,17 @@ a:hover {
   }
 }
 
-
 .navbar-brand {
   font-size: 18px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+
+  .icon-home {
+    height: 25px;
+    box-shadow: none;
+    margin-right: 8px;
+  }
 }
 
 .navbar-toggler {

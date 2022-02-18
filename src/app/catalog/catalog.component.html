@@ -2,9 +2,9 @@
   <h3>Catalogue</h3>
 
   <div class="row justify-content-center">
-    <div @items class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto"
+    <div @items class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto card-container"
       *ngFor="let anime of catalog">
-      <div class="card" style="max-width: 18rem;">
+      <div class="card">
         <a [routerLink]="'/anime/' + anime.id">
           <div class="inner">
               <img  [@fadeAnimation]="'in'" class="card-img-top" [src]="anime.coverImg">
