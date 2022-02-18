@@ -36,8 +36,8 @@
         </p>
         <p>
           <span class="fw-bold">Pour plus d'informations</span> :
-          <a [href]="anime.infoLinks.nautiljon" target="_blank" class="normal-url link">Nautiljon</a> /
-          <a [href]="anime.infoLinks.anilist" target="_blank" class="normal-url link">Anilist</a>
+          <a [href]="anime.infoLinks.nautiljon" target="_blank" class="normal-url link"><img class="download-icon" src="../../assets/nautiljon.ico" > Nautiljon</a> /
+          <a [href]="anime.infoLinks.anilist" target="_blank" class="normal-url link"> <img class="download-icon" src="../../assets/anilist.svg" >Anilist</a>
         </p>
         <p *ngIf="anime.status">
           <span class="fw-bold">Statut</span> : <span [innerHTML]="anime.status"></span>
@@ -51,14 +51,19 @@
       </p>
 
       <div class="list-group">
+        <div class="list-group-item list-group-item-action bg-dark text-white">
+          <i class="fas fa-download me-2"></i>Téléchargement
+        </div>
         <div class="list-group-item bg-secondary">
           <a class="btn btn-sm btn-outline-dark text-white me-3" [ngClass]="{'disabled': !anime.downloadLinks.ddl}"
             [href]="anime.downloadLinks.ddl" target="_blank">
-            DDL mega.io
+            <img class="download-icon" src="../../assets/mega.ico" >
+            DDL
           </a>
           <a class="btn btn-sm btn-outline-dark text-white" [ngClass]="{'disabled': !anime.downloadLinks.torrent}"
             [href]="anime.downloadLinks.torrent" target="_blank">
-            Torrent nyaa.si
+            <img class="download-icon" src="../../assets/nyaa.png" >
+            Torrent
           </a>
         </div>
       </div>
