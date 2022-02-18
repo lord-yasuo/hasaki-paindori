@@ -9,7 +9,7 @@
     "numberEpisodes": "26",
     "animeFormat": "Série TV",
     "finished": false,
-    "durationPerEpisode": "5 min",
+    "durationPerEpisode": "3 min",
     "aired": "du 05/07/2018 au 27/12/2018",
     "season": "Été",
     "year": 2018,
@@ -25,5 +25,31 @@
       "ddl": "https://mega.nz/folder/IZ9mDR4Q#IQh8NZ_nJDZ7LTlBtWx15g"
     },
     "status": "<b>Abandon</b> <br> <i>J’avais même pas vérifié avant de me lancer mais il s’avère que la S1 a déjà été traduite par <a href=\"https://www.yarashii.fr/2019/03/bang-dream-garupa-pico-integrale/\" target=\"_blank\">Yarashii</a>. <br> Par conséquent, je vais plutôt me pencher sur la S2.</i>"
+  },
+  "2": {
+    "id": "2",
+    "title": "BanG Dream! Garupa☆Pico S2 Oomori",
+    "bdrip": "true",
+    "alternativeTitle": "BanG Dream! Girls Band Party!☆PICO～OHMORI～",
+    "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113906-XWfukSUYMS5K.png",
+    "lastUpdate": 1644965065,
+    "numberEpisodes": "26",
+    "animeFormat": "Série TV",
+    "finished": false,
+    "durationPerEpisode": "3 min",
+    "aired": "du 07/05/2020 au 29/10/2020",
+    "season": "Printemps",
+    "year": 2020,
+    "genres": "Comédie / School Life / Slice of Life",
+    "studios": "SANZIGEN / W-Toon Studio / DMM.futureworks",
+    "summary": "Voici la saison 2 de la mini série TV sur des événements drôles et aléatoires avec les personnages du jeu vidéo BanG Dream! Girls Band Party! en Chibi/SD (super deformed).",
+    "infoLinks": {
+      "anilist": "https://anilist.co/anime/113906/BanG-Dream-GarupaPico-Oomori/",
+      "nautiljon": "https://www.nautiljon.com/animes/bang+dream!+garupa%E2%98%86pico+~ohmori~.html"
+    },
+    "downloadLinks": {
+      "torrent": "https://nyaa.si/user/zordman?f=0&c=0_0&q=BanG+Dream%21+Garupa%E2%98%86Pico+S2",
+      "ddl": "https://mega.nz/folder/IUdXzYha#e7li3eqlA8WBqhxJovJKjg"
+    }
   }
 }
