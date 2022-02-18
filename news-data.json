@@ -22,5 +22,13 @@
      "lastUpdate": "1644965065",
      "title": "<b>Abandon : BanG Dream! Garupa☆Pico S1</b>",
      "description": "<i>J’avais même pas vérifié avant de me lancer mais il s’avère que la S1 a déjà été traduite par <a href=\"https://www.yarashii.fr/2019/03/bang-dream-garupa-pico-integrale/\" target=\"_blank\">Yarashii</a>. <br> Par conséquent, je vais plutôt me pencher sur la S2.</i>"
-  }
+  },
+   "5": {
+    "type": "anime",
+    "id": "2",
+    "title": "BanG Dream! Garupa☆Pico S2 Oomori",
+    "description": "Épisode 01 BDRip",
+    "lastUpdate": "1645143369",
+    "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113906-XWfukSUYMS5K.png"
+  },
 }
