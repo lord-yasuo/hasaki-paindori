@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { ScrollToModule } from "@nicky-lenaers/ngx-scroll-to";
+import { MomentModule } from "ngx-moment";
 import { GoTopDirective } from "./directives/go-top.directive";
 
 @NgModule({
@@ -8,6 +9,11 @@ import { GoTopDirective } from "./directives/go-top.directive";
   ],
   imports: [
     ScrollToModule.forRoot(),
+    MomentModule.forRoot({
+      relativeTimeThresholdOptions: {
+        'm': 59
+      }
+    })
   ],
   exports: [
     GoTopDirective,

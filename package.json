@@ -26,6 +26,8 @@
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
     "bootstrap": "^5.1.3",
     "jquery": "^3.6.0",
+    "moment": "^2.29.1",
+    "ngx-moment": "^6.0.2",
     "rxjs": "^7.5.1",
     "tslib": "^2.3.1",
     "zone.js": "~0.11.4"

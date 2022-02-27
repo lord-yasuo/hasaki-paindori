@@ -23,7 +23,7 @@
                   <img *ngIf="item.type === 'anime'" [src]="item.coverImg" class="cover-img" />
                 </div>
               </td>
-              <td>{{ item.lastUpdate * 1000 | date:'dd/MM/yyyy HH:mm':'undefined':'fr' }}</td>
+              <td>{{ item.lastUpdate * 1000 | amTimeAgo }} <br> <small class="fst-italic">({{ item.lastUpdate * 1000 | date:'dd/MM/yyyy HH:mm':'undefined':'fr' }})</small></td>
               <td>
                 <a *ngIf="item.type === 'anime'" [routerLink]="'anime/' + item.id">{{ item.title }}</a>
                 <span *ngIf="item.type !== 'anime'" [innerHTML]="item.title"></span><br>
