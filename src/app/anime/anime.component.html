@@ -36,8 +36,8 @@
         </p>
         <p>
           <span class="fw-bold">Pour plus d'informations</span> :
-          <a [href]="anime.infoLinks.nautiljon" target="_blank" class="normal-url link"><img class="download-icon" src="../../assets/nautiljon.ico" > Nautiljon</a> /
-          <a [href]="anime.infoLinks.anilist" target="_blank" class="normal-url link"> <img class="download-icon" src="../../assets/anilist.svg" >Anilist</a>
+          <a *ngIf="anime.infoLinks.nautiljon" [href]="anime.infoLinks.nautiljon" target="_blank" class="normal-url link"><img class="download-icon" src="../../assets/nautiljon.ico" >Nautiljon</a> <span *ngIf="anime.infoLinks.nautiljon"> /</span>
+          <a *ngIf="anime.infoLinks.anilist" [href]="anime.infoLinks.anilist" target="_blank" class="normal-url link"> <img class="download-icon" src="../../assets/anilist.svg" >Anilist</a>
         </p>
         <p *ngIf="anime.status">
           <span class="fw-bold">Statut</span> : <span [innerHTML]="anime.status"></span>
