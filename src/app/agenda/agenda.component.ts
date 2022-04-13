@@ -19,7 +19,7 @@ export class AgendaComponent implements OnInit {
   agenda: Array<{ day: string, animes: Array<DayAnimeModel> }>;
 
   constructor(private _titleService: Title, private _http: HttpClient) {
-    this._titleService.setTitle('Mon agenda - Hiver 2022 - Hasaki Paindori');
+    this._titleService.setTitle('Mon agenda - ' + this.getAnimeSeason() + ' - Hasaki Paindori');
   }
 
   ngOnInit(): void {
@@ -43,7 +43,10 @@ export class AgendaComponent implements OnInit {
     if (window.innerWidth < 576) {
       return false;
     }
-    return index - 1 === this.agenda.map(day => day.animes.length).indexOf(Math.max(... this.agenda.map(day => day.animes.length)));
+    return index === this.agenda.map(day => day.animes.length).indexOf(Math.max(... this.agenda.map(day => day.animes.length)));
+  }
+
+  getAnimeSeason() {
+    return ['Hiver', 'Printemps', 'Été', 'Automne'][Math.floor((new Date().getMonth() / 12 * 4)) % 4] + ' ' + new Date().getFullYear();
   }
 }
-
