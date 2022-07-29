@@ -79,5 +79,32 @@
       "ddl": "https://mega.nz/folder/hYFmiZDT#_is-3fo4A2rucBhZOwGhbg"
     },
     "status": "Terminé (02/02)"
+  },
+  "4": {
+    "id": "4",
+    "title": "BanG Dream! Morfonication",
+    "bdrip": false,
+    "alternativeTitle": "",
+    "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146501-unXlzkXh9NDL.png",
+    "lastUpdate": 1659091292,
+    "numberEpisodes": "2",
+    "animeFormat": "Spécial",
+    "finished": false,
+    "durationPerEpisode": "24 min",
+    "aired": "du 28/07/2022 au 29/07/2022",
+    "season": "Été",
+    "year": 2022,
+    "genres": "Musique / Slice of Life",
+    "studios": "SANZIGEN",
+    "summary": "Les membres de Morfonica sont enthousiastes à l'idée de passer des vacances d'été riches en concerts. Pendant ce temps, Touko planifie secrètement le \"Plan Morfonica de l'été\" avec Nanami et Tsukushi.",
+    "infoLinks": {
+      "anilist": "https://anilist.co/anime/146501/BanG-Dream-Morfonication/",
+      "nautiljon": "https://www.nautiljon.com/animes/bang+dream!+morfonication.html"
+    },
+    "downloadLinks": {
+      "torrent": "https://nyaa.si/user/zordman?f=0&c=0_0&q=Morfonication",
+      "ddl": "https://mega.nz/folder/1NNFgKQb#FX_OhhOzxDxFkJnEszq0sw"
+    },
+    "status": "En cours (01/02)"
   }
 }
