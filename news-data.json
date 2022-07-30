@@ -255,12 +255,20 @@
     "lastUpdate": "1657478631",
     "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113906-XWfukSUYMS5K.png"
   },
-  "33": {
+  "34": {
     "type": "anime",
     "id": "4",
     "title": "BanG Dream! Morfonication",
     "description": "Épisode 01 WEBRip",
     "lastUpdate": "1659091292",
+    "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146501-unXlzkXh9NDL.png"
+  },
+  "35": {
+    "type": "anime",
+    "id": "4",
+    "title": "BanG Dream! Morfonication",
+    "description": "Épisode 02 WEBRip FIN",
+    "lastUpdate": "1659139683",
     "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146501-unXlzkXh9NDL.png"
   }
 }
