@@ -259,7 +259,7 @@
     "type": "anime",
     "id": "4",
     "title": "BanG Dream! Morfonication",
-    "description": "Épisode 01 WEBRip",
+    "description": "Épisode 01 WEB",
     "lastUpdate": "1659091292",
     "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146501-unXlzkXh9NDL.png"
   },
@@ -267,8 +267,16 @@
     "type": "anime",
     "id": "4",
     "title": "BanG Dream! Morfonication",
-    "description": "Épisode 02 WEBRip FIN",
+    "description": "Épisode 02 FIN WEB",
     "lastUpdate": "1659139683",
     "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146501-unXlzkXh9NDL.png"
-  }
+  },
+  "36": {
+    "type": "anime",
+    "id": "4",
+    "title": "BanG Dream! Morfonication",
+    "description": "Épisode 01 et 02 WEB <a href=\"https://mega.nz/folder/1NNFgKQb#FX_OhhOzxDxFkJnEszq0sw\" target=\"_blank\">V2</a>",
+    "lastUpdate": "1659211418",
+    "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146501-unXlzkXh9NDL.png"
+  },
 }
