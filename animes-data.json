@@ -64,7 +64,7 @@
     "animeFormat": "Spécial",
     "finished": false,
     "durationPerEpisode": "24 min",
-    "aired": "du 10/03/2021 au 17/03/2021",
+    "aired": "du 10/03/2022 au 17/03/2022",
     "season": "Hiver",
     "year": 2022,
     "genres": "Musique / Slice of Life",
@@ -110,7 +110,7 @@
    "5": {
     "id": "5",
     "title": "BanG Dream! Garupa☆Pico S3 Fever",
-    "bdrip": true,
+    "bdrip": false,
     "alternativeTitle": "BanG Dream! Girls Band Party!☆PICO Fever!",
     "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135171-prqopjfpm21S.png",
     "lastUpdate": 1661645291,
