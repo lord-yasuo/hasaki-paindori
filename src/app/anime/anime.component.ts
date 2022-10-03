@@ -33,10 +33,10 @@ export class AnimeComponent implements OnInit {
       .subscribe({
         next: data => {
           this.anime = data[animeID];
-          this._titleService.setTitle(this.anime.title + ' - Hasaki Paindori');
+          this._titleService.setTitle(this.anime.title + ' - HasakiDesu');
 
           if (this.anime) {
-            this._titleService.setTitle(this.anime.title + ' - Hasaki Paindori');
+            this._titleService.setTitle(this.anime.title + ' - HasakiDesu');
 
             // Add anime name in URL
             history.replaceState(history.state, '/anime/' + animeID, '/anime/' + animeID + '/' + this.anime.title);

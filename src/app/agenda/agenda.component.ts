@@ -19,7 +19,7 @@ export class AgendaComponent implements OnInit {
   agenda: Array<{ day: string, animes: Array<DayAnimeModel> }>;
 
   constructor(private _titleService: Title, private _http: HttpClient) {
-    this._titleService.setTitle('Mon agenda - ' + this.getAnimeSeason() + ' - Hasaki Paindori');
+    this._titleService.setTitle('Mon agenda - ' + this.getAnimeSeason() + ' - HasakiDesu');
   }
 
   ngOnInit(): void {

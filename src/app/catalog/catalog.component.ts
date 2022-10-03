@@ -19,7 +19,7 @@ export class CatalogComponent implements OnInit {
   catalog: Array<AnimeModel>;
 
   constructor(private _router: Router, private _titleService: Title, private _http: HttpClient) {
-    this._titleService.setTitle('Catalogue - Hasaki Paindori');
+    this._titleService.setTitle('Catalogue - HasakiDesu');
   }
 
   ngOnInit() {
