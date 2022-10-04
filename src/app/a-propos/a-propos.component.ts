@@ -15,6 +15,6 @@ export class AProposComponent {
   showGoTopButton = false;
 
   constructor(private _titleService: Title) {
-    this._titleService.setTitle('À propos - HasakiDesu');
+    this._titleService.setTitle('À propos - HeyHasaki');
   }
 }

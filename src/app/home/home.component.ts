@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   news: Array<NewModel>;
 
   constructor(private _titleService: Title, private _http: HttpClient) {
-    this._titleService.setTitle('Accueil - HasakiDesu');
+    this._titleService.setTitle('Accueil - HeyHasaki');
   }
 
   ngOnInit() {
