@@ -494,5 +494,13 @@
     "description": "Épisode 26 FIN WEB",
     "lastUpdate": "1662920567",
     "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135171-prqopjfpm21S.png"
+  },
+   "64": {
+    "type": "anime",
+    "id": "6",
+    "title": "D4DJ Double Mix",
+    "description": "Épisode spécial FIN",
+    "lastUpdate": "1668629798",
+    "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146321-9yRiuTiGcotj.png"
   }
 }
