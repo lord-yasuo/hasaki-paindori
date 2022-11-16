@@ -8,7 +8,7 @@
     "lastUpdate": 1644965065,
     "numberEpisodes": "26",
     "animeFormat": "Série TV",
-    "finished": false,
+    "finished": true,
     "durationPerEpisode": "3 min",
     "aired": "du 05/07/2018 au 27/12/2018",
     "season": "Été",
@@ -35,7 +35,7 @@
     "lastUpdate": 1657478631,
     "numberEpisodes": "26",
     "animeFormat": "Série TV",
-    "finished": false,
+    "finished": true,
     "durationPerEpisode": "3 min",
     "aired": "du 07/05/2020 au 29/10/2020",
     "season": "Printemps",
@@ -62,7 +62,7 @@
     "lastUpdate": 1648408550,
     "numberEpisodes": "2",
     "animeFormat": "Spécial",
-    "finished": false,
+    "finished": true,
     "durationPerEpisode": "24 min",
     "aired": "du 10/03/2022 au 17/03/2022",
     "season": "Hiver",
@@ -89,7 +89,7 @@
     "lastUpdate": 1659221045,
     "numberEpisodes": "2",
     "animeFormat": "Spécial",
-    "finished": false,
+    "finished": true,
     "durationPerEpisode": "24 min",
     "aired": "du 28/07/2022 au 29/07/2022",
     "season": "Été",
@@ -116,7 +116,7 @@
     "lastUpdate": 1662920567,
     "numberEpisodes": "26",
     "animeFormat": "Série TV",
-    "finished": false,
+    "finished": true,
     "durationPerEpisode": "3 min",
     "aired": "du 07/10/2021 au 31/03/2022",
     "season": "Automne",
@@ -133,5 +133,32 @@
       "ddl": "https://mega.nz/folder/gc9CnDDK#g9LDT6lkTQjlDnd2sO15fw"
     },
     "status": "Terminé (26/26)"
+  },
+  "6": {
+    "id": "6",
+    "title": "D4DJ Double Mix",
+    "bdrip": true,
+    "alternativeTitle": "",
+    "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146321-9yRiuTiGcotj.png",
+    "lastUpdate": 1668629798,
+    "numberEpisodes": "1",
+    "animeFormat": "Spécial",
+    "finished": true,
+    "durationPerEpisode": "24 min",
+    "aired": "19/08/2022",
+    "season": "Été",
+    "year": 2022,
+    "genres": "School Life / Slice of Life",
+    "studios": "SANZIGEN",
+    "summary": "Épisode spécial centré sur les groupes Merm4id et RONDO et se passant après le premier D4Fes.",
+    "infoLinks": {
+      "anilist": "https://anilist.co/anime/146321/D4DJ-Double-Mix/",
+      "nautiljon": "https://www.nautiljon.com/animes/d4dj+-+double+mix.html"
+    },
+    "downloadLinks": {
+      "torrent": "https://nyaa.si/view/1603509",
+      "ddl": "https://mega.nz/folder/oJl2zbSJ#h6rtkowA0whhnt9qF-5crg"
+    },
+    "status": "Terminé (01/01)"
   }
 }
