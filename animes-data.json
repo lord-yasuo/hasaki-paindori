@@ -173,7 +173,7 @@
     "finished": false,
     "durationPerEpisode": "3 min",
     "aired": "05/02/2021",
-    "season": "Hivers",
+    "season": "Hiver",
     "year": 2021,
     "genres": "Comédie / School Life / Slice of Life",
     "studios": "DMM.futureworks, W-Toon Studio",
@@ -187,5 +187,32 @@
       "ddl": "https://mega.nz/folder/AJ1QHKTI#9ui6-IpHER4e_Xku-IVpdA"
     },
     "status": "Terminé (26/26)"
+  },
+  "8": {
+    "id": "8",
+    "title": "BanG Dream! Ave Mujica",
+    "bdrip": false,
+    "alternativeTitle": "",
+    "coverImg": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169295-WxoGTeMbje4T.jpg",
+    "lastUpdate": 1736288822,
+    "numberEpisodes": "13",
+    "animeFormat": "Série TV",
+    "finished": false,
+    "durationPerEpisode": "24 min",
+    "aired": "02/01/2025",
+    "season": "Hiver",
+    "year": 2025,
+    "genres": "Musique / Drame",
+    "studios": "SANZIGEN",
+    "summary": "Suite de la série BanG Dream! It’s MyGo!!! (spin-off de la série principale) et centrée sur le nouveau groupe Ave Mujca.",
+    "infoLinks": {
+      "anilist": "https://anilist.co/anime/169295/BanG-Dream-Ave-Mujica/",
+      "nautiljon": "https://www.nautiljon.com/animes/bang+dream!+ave+mujica.html"
+    },
+    "downloadLinks": {
+      "torrent": "https://nyaa.si/view/1918772",
+      "ddl": "https://mega.nz/folder/pUllwYBK#toRrpZ6ZJhL-vpT16pPW3w"
+    },
+    "status": "<b>Abandonné</b> (01/13)"
   }
 }
